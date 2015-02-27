@@ -1,0 +1,379 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<ScrollView
+ 	android:layout_width="match_parent"
+  	android:layout_height="100dp"
+  	android:layout_weight="1.0" android:fadingEdge="none" >
+  
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#e5e5e5"
+    tools:context="com.example.vaccination.AgeGroup1" >
+
+    <RelativeLayout
+        android:id="@+id/bcg_d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/bcg_d1Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="BCG"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/bcg_d1Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="At the time of Birth"
+        	android:layout_below="@+id/bcg_d1Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <TextView 
+            android:id="@+id/bcg_d1Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(1 Dose) First Dose"
+        	android:layout_below="@+id/bcg_d1Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bcg_d1Dose"
+            android:layout_alignRight="@+id/bcg_d1Text"
+            android:layout_alignTop="@+id/bcg_d1Text" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/hepb_d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/bcg_d1"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/hepb_d1Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="HepB"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/hepb_d1Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="At the time of Birth"
+        	android:layout_below="@+id/hepb_d1Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+	
+        <TextView 
+            android:id="@+id/hepb_d1Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(4 Doses) First Dose"
+        	android:layout_below="@+id/hepb_d1Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hepb_d1Dose"
+            android:layout_alignRight="@+id/hepb_d1Text"
+            android:layout_alignTop="@+id/hepb_d1Text" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/opv_d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/hepb_d1"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/opv_d1Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="OPV"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/opv_d1Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="At the time of Birth"
+        	android:layout_below="@+id/opv_d1Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <TextView 
+            android:id="@+id/opv_d1Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(5 Doses) First Dose"
+        	android:layout_below="@+id/opv_d1Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/opv_d1Dose"
+            android:layout_alignRight="@+id/opv_d1Text"
+            android:layout_alignTop="@+id/opv_d1Text" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/dtp_d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/opv_d1"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/dtp_d1Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="DTP"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/dtp_d1Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="After 6 weeks"
+        	android:layout_below="@+id/dtp_d1Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <TextView 
+            android:id="@+id/dtp_d1Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(5 Doses) First Dose"
+        	android:layout_below="@+id/dtp_d1Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dtp_d1Dose"
+            android:layout_alignRight="@+id/dtp_d1Text"
+            android:layout_alignTop="@+id/dtp_d1Text" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/opv_d2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/dtp_d1"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/opv_d2Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="OPV"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/opv_d2Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="After 6 weeks"
+        	android:layout_below="@+id/opv_d2Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <TextView 
+            android:id="@+id/opv_d2Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(5 Doses) Second Dose"
+        	android:layout_below="@+id/opv_d2Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/opv_d2Dose"
+            android:layout_alignRight="@+id/opv_d2Text"
+            android:layout_alignTop="@+id/opv_d2Text" />
+        
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/hepb_d2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/opv_d2"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <TextView 
+            android:id="@+id/hepb_d2Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="HepB"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/hepb_d2Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="After 6 weeks"
+        	android:layout_below="@+id/hepb_d2Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <TextView 
+            android:id="@+id/hepb_d2Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(4 Doses) Second Dose"
+        	android:layout_below="@+id/hepb_d2Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hepb_d2Dose"
+            android:layout_alignRight="@+id/hepb_d2Text"
+            android:layout_alignTop="@+id/hepb_d2Text" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/dtp_d2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_below="@+id/hepb_d2"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp" >
+        
+        <TextView 
+            android:id="@+id/dtp_d2Text"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="DTP"
+        	android:textSize="18sp"
+        	android:fontFamily="Arial"
+        	android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/dtp_d2Time"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="After 10 weeks"
+        	android:layout_below="@+id/dtp_d2Text"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+        
+        <TextView 
+            android:id="@+id/dtp_d2Dose"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="(5 Doses) Second Dose"
+        	android:layout_below="@+id/dtp_d2Time"
+        	android:textSize="12sp"
+        	android:fontFamily="Arial" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dtp_d2Dose"
+            android:layout_alignRight="@+id/dtp_d2Text"
+            android:layout_alignTop="@+id/dtp_d2Text" />
+        
+    </RelativeLayout>
+   
+   </RelativeLayout>
+   
+</ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/updateView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4fa5d5" >
+
+        <TextView
+            android:id="@+id/updateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Update"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </RelativeLayout>
+    
+  </LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vaccination</string>
+    <string name="hello_world">Vaccinator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+
+    <string-array name="agegroups_array">
+        <item>Age Group</item>
+        <item>0 - 18</item>
+        <item>19 - 21</item>
+        <item>22 - 26</item>
+        <item>27 - 49</item>
+        <item>50 - 59</item>
+        <item>60 - 64</item>
+        <item> > 64</item>
+    </string-array>
+	
+    <string-array name="city_array">
+        <item>Agra</item>
+        <item>Kanpur</item>
+        <item>Lucknow</item>
+    </string-array>
+    
+    <string-array name="types_array">
+        <item>Community Health Centers</item>
+        <item>Primary Health Centres</item>
+        <item>Sub Centres</item>
+    </string-array>
+    
+    <string name="title_activity_list_vaccinations">Vaccinations</string>
+    <string name="title_activity_show_user">ShowUser</string>
+    <string name="title_activity_age_group1">AgeGroup1</string>
+
+</resources>

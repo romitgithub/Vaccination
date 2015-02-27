@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vaccination.ShowUser" >
+
+    <TextView
+        android:id="@+id/fullNameLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fullName"
+        android:layout_alignBottom="@+id/fullName"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="full name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/identityLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/identity"
+        android:layout_alignBottom="@+id/identity"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Identity"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fullName"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Identity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dobLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dob"
+        android:layout_alignBottom="@+id/dob"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Date of Birth"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/identity"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="DOB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mobileLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Mobile"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Phone"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ageGroupLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageGroup"
+        android:layout_alignBottom="@+id/ageGroup"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:text="Age Group"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/ageGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Age Group"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/showDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/borderback"
+        android:padding="5dp"
+        android:text="Show Vaccination Details"
+        android:textColor="#4fa5d5" />
+
+</RelativeLayout>
