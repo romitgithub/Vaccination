@@ -1106,7 +1106,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070016;
         public static final int action_menu_presenter=0x7f070017;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f07008d;
+        public static final int action_settings=0x7f07008f;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int ageGroup=0x7f070080;
         public static final int ageGroup1=0x7f070061;
@@ -1157,6 +1157,8 @@ containing a value of this type.
         public static final int enterButton=0x7f070086;
         public static final int expand_activities_button=0x7f070026;
         public static final int expanded_menu=0x7f07002c;
+        public static final int facilityNameTextView=0x7f07008d;
+        public static final int facilitySpinner=0x7f07008e;
         public static final int fullName=0x7f07007b;
         public static final int fullNameLeft=0x7f07007a;
         public static final int fullname=0x7f070071;

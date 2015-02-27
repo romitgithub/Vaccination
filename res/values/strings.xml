@@ -27,6 +27,7 @@
         <item>Community Health Centers</item>
         <item>Primary Health Centres</item>
         <item>Sub Centres</item>
+        <item>District Hospital</item>
     </string-array>
     
     <string name="title_activity_list_vaccinations">Vaccinations</string>

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_alignLeft="@+id/subCityTextView"
         android:layout_below="@+id/subCityTextView" />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="0dp"
         android:text="Enter" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/subCitySpinner"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="Health Facility"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/citySpinner"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="Select SubDistrict"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="Select City"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -64,14 +64,14 @@
         android:layout_below="@+id/cityTextView"
         android:layout_centerHorizontal="true"
         android:entries="@array/city_array"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="10dp" />
 
     <Spinner
         android:id="@+id/typesSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/typeTextView"
         android:entries="@array/types_array" />
 
@@ -82,7 +82,7 @@
         android:layout_alignLeft="@+id/typesSpinner"
         android:layout_alignRight="@+id/typesSpinner"
         android:layout_below="@+id/typesSpinner"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="Village Name"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -91,6 +91,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/villageTextView"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/facilityNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/villageSpinner"
+        android:layout_marginTop="20dp"
+        android:text="Facility Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/facilitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facilityNameTextView"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

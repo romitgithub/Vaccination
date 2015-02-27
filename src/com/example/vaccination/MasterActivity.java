@@ -30,6 +30,7 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 	Spinner subCitySpinner;
 	Spinner typesSpinner;
 	Spinner villageSpinner;
+	Spinner facilitySpinner;
 	Button enterButton;
 	private int mLastSpinnerPosition = 0;
 
@@ -46,6 +47,8 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 		this.typesSpinner.setOnItemSelectedListener(this);
 
 		this.villageSpinner = (Spinner)this.findViewById(R.id.villageSpinner);
+		
+		this.facilitySpinner = (Spinner)this.findViewById(R.id.facilitySpinner);
 
 		this.enterButton = (Button)this.findViewById(R.id.enterButton);
 		this.enterButton.setOnClickListener(this);
@@ -140,6 +143,7 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 		String subCity = String.valueOf(this.subCitySpinner.getSelectedItem());
 		String healthType = String.valueOf(this.typesSpinner.getSelectedItem());
 		String village = String.valueOf(this.villageSpinner.getSelectedItem());
+		String facility = String.valueOf(this.facilitySpinner.getSelectedItem());
 		
 		JSONParser parser = new JSONParser();
 
@@ -180,6 +184,7 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 
 			List<String> subCityList = new ArrayList<String>();
 			List<String> villageList = new ArrayList<String>();
+			List<String> facilityList = new ArrayList<String>();
 
 			
 			for (Object subDistricts : entries) 
@@ -189,6 +194,7 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 				String subDistrict = indJsonObj.get("SubDistrict Name").toString();
 				String villageName = indJsonObj.get("Village Name").toString();
 				String healthFacility = indJsonObj.get("Health Facility").toString();
+				String facilityName = indJsonObj.get("Facility Name").toString();
 
 				if(!subCityList.contains(subDistrict))
 				{
@@ -197,6 +203,10 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 				if(!villageList.contains(villageName) && subDistrict.equals(firstSubCity) && healthFacility.equals(firstHealthFacility))
 				{
 					villageList.add(villageName);
+				}
+				if(!facilityList.contains(facilityName) && subDistrict.equals(firstSubCity) && healthFacility.equals(firstHealthFacility) && villageName.equals(firstVillageName))
+				{
+					facilityList.add(facilityName);
 				}
 			}
 
@@ -211,6 +221,24 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 				this.villageSpinner.setOnItemSelectedListener(this);
 				
 				if(this.subCitySpinner == parent) this.typesSpinner.setSelection(0);
+				
+				ArrayAdapter<String> facilityDataAdapter = new ArrayAdapter<String>(this,
+						android.R.layout.simple_spinner_item, facilityList);
+				facilityDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+				facilityDataAdapter.notifyDataSetChanged();
+				this.facilitySpinner.setAdapter(facilityDataAdapter);
+				this.facilitySpinner.setSelection(0,false);
+				this.facilitySpinner.setOnItemSelectedListener(this);
+			}
+			else if(parent == this.villageSpinner)
+			{
+				ArrayAdapter<String> facilityDataAdapter = new ArrayAdapter<String>(this,
+						android.R.layout.simple_spinner_item, facilityList);
+				facilityDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+				facilityDataAdapter.notifyDataSetChanged();
+				this.facilitySpinner.setAdapter(facilityDataAdapter);
+				this.facilitySpinner.setSelection(0,false);
+				this.facilitySpinner.setOnItemSelectedListener(this);
 			}
 			else if(parent == this.citySpinner)
 			{
@@ -229,6 +257,14 @@ public class MasterActivity extends ActionBarActivity implements OnItemSelectedL
 				this.villageSpinner.setAdapter(villageDataAdapter);
 				this.villageSpinner.setSelection(0, false);
 				this.villageSpinner.setOnItemSelectedListener(this);
+				
+				ArrayAdapter<String> facilityDataAdapter = new ArrayAdapter<String>(this,
+						android.R.layout.simple_spinner_item, facilityList);
+				facilityDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+				facilityDataAdapter.notifyDataSetChanged();
+				this.facilitySpinner.setAdapter(facilityDataAdapter);
+				this.facilitySpinner.setSelection(0,false);
+				this.facilitySpinner.setOnItemSelectedListener(this);
 			}
 		}
 		catch(Exception e)
